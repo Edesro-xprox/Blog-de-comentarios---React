@@ -1,11 +1,12 @@
 import Comments from './comments_component/Comments';
+import Header from './comments_component/Header';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <div className='containerMain'>
-        <h1>Anécdotas de profesionales sobre el transcurso en sus carreras</h1>
+        <Header/>
         <Comments
           imgName = 'Eva'
           name = 'Eva Luna Evangelión'
