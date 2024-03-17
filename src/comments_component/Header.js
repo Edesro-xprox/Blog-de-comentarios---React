@@ -1,17 +1,23 @@
 import React from "react";
 import '../comments_css/Header.css';
 
-function Header(){
+function Header({onChangeItem}){
+
+    const itemClick = (event) => {
+        const item = event.target.innerText;
+        onChangeItem(item);
+    };
+
     return(
         <div className="containerHeader">
-            <h1 className="titleHeader">Un universitario</h1>
-            <p className="subtitleHeader">El blog de un universitario a otro universitario</p>
+            <h1 className="titleHeader">Universitarios</h1>
+            <p className="subtitleHeader">El blog de las experiencias en los universitarios</p>
             <div className="menuHeader">
                 <ul>
-                    <li>#Anécdotas</li>
-                    <li>#Docentes</li>
-                    <li>#Tesis</li>
-                    <li>#Cursos</li>
+                    <li onClick={itemClick}>#Anécdotas</li>
+                    <li onClick={itemClick}>#Docentes</li>
+                    <li onClick={itemClick}>#Tesis</li>
+                    <li onClick={itemClick}>#Cursos</li>
                 </ul>
             </div>
         </div>

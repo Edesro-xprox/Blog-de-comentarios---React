@@ -1,0 +1,13 @@
+.container_text_reference{
+    width: 1170px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:dimgray;
+}
+
+.text_reference{
+    padding: 5px 0 0 5px;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
